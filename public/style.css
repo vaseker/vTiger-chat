@@ -1,0 +1,66 @@
+body {position:relative;min-width: 520px;}
+#opaco {position: fixed;top:0;left:0;right: 0;bottom: 0;background-color: rgba(100,100,100,0.7);
+display:none;opacity: 0;}
+#opaco.visible {display: block;}
+#popup {position: absolute;left: 5%;right: 5%;top:5%;max-height: 85%;overflow: auto;
+background-color: #fff;border-radius:5px;box-shadow: 0 0 10px rgba(0,0,0,0.8);padding: 10px;}
+#popup .close {float: right;padding: 5px;cursor: pointer;}
+#loading {text-align: center;}
+#reportForm h2 {margin: 10px 0;}
+#reportForm .label,#reportForm .value {width:50%;}
+#reportForm .value input, #reportForm .value textarea {width:100%;max-width: 100%;}
+#sources .source {padding: 5px 7px;border-radius: 3px;background-color: #eee;cursor: pointer;margin: 2px 0;}
+#sources .source:hover {background-color: #ddd;}
+#sources .source.selected {background-color: #bbb;}
+#reportSend {background-color: #eee;display: inline-block;padding: 5px 8px;cursor: pointer;margin: 10px auto;}
+#reportSend:hover {background-color: #ddd;}
+#rooms {list-style-type:none;padding:0;margin:0;}
+#rooms li {float:left;padding:2px 5px;cursor:pointer;margin:3px 1px;border:1px solid #444;
+border-radius:5px;}
+#rooms li.this {cursor:auto;background-color:#eee;}
+#rooms .leaveRoom, #attach .el .del {float:right;font-size:9px;padding:1px 3px;margin:3px 0 0 5px;
+border:1px solid #000;border-radius:5px;cursor:pointer;}
+#rooms .leaveRoom:hover, #attach .el .del:hover  {background-color:#ccc;}
+.center {text-align: center;}
+#attach {padding: 10px 0;}
+#attach .el {float: left;cursor: pointer;padding: 5px 8px;border-radius: 3px;border: 1px solid #333;}
+#attach .el:hover {background-color: #eee;}
+#chatWindow {display:none;}
+#chat {width: 100%;height: 290px;border: 1px solid rgb(192, 192, 192);
+padding: 5px;box-sizing: border-box;margin-bottom: 5px;}
+.chat {
+    height:100%;
+    overflow: auto;
+    display:none;
+}
+.chat.this {display:block;}
+.chat .reportPacked {cursor: pointer;padding: 3px 5px;background-color: #ddd;display: inline-block;}
+#chatFrame {width:400px;float:left;}
+#contacts {float:left;padding:0;margin:0 10px;list-style-type:none;max-width: 140px;}
+#contacts li.cl {display:block;padding:3px;cursor:pointer;border-bottom: 1px solid #ddd;}
+#contacts li.cl.online {font-weight: bold;}
+#contacts li.cl:hover {background-color:#ccc;}
+#input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.in {
+    color: rgb(0, 0, 0);
+}
+.out {
+    color: rgb(0, 0, 0);
+}
+.time {
+    color: rgb(144, 144, 144);
+}
+.system {
+    color: rgb(165, 42, 42);
+}
+.user {
+    color: rgb(25, 25, 112);
+}
+
+.clear {display:inline-block;}
+.clear {display:block;}
+.clear:after {content:".";display:block;height:0px;clear:both;visibility:hidden;line-height:0;}
